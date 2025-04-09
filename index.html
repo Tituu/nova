@@ -253,9 +253,7 @@
 <body class="bg-gray-900 text-white min-h-screen" x-data="app()" 
       @keydown.meta.k.prevent="$refs.searchInput.focus()"
       @keydown.ctrl.k.prevent="$refs.searchInput.focus()">
-    <div x-data="{ showPopup: localStorage.getItem('showPopupReminder') !== 'false' }" x-show="showPopup" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          </div>
-    <div x-show="localStorage.getItem('showParticles') !== 'false'" id="particles-js" class="fixed inset-0 pointer-events-none z-0"></div>
+
 
     <!-- navigation -->
     <nav class="fixed w-full z-50 glass-effect">
